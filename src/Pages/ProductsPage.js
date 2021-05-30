@@ -1,10 +1,16 @@
 import React, {Component} from "react";
+import ProductList from "../Components/ProductList"
 
 
 const ProductsPage = (props) => {
 
     return (
-        <div></div>
+        <div>
+            <h1>ProductsPage</h1>
+            <ProductList/>
+
+
+        </div>
     );
 
 
