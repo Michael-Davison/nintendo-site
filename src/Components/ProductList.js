@@ -35,7 +35,7 @@ const ProductList = (props) => {
                     <li onClick={e=>clickHandler("All Products")}>All Products</li>
                     <li onClick={e=>clickHandler("Consoles")}>Consoles</li>
                     <li onClick={e=>clickHandler("Games")}>Games</li>
-                    <li onClick={e=>clickHandler("Merch")}>Merchandise</li>
+                    <li onClick={e=>clickHandler("Merchandise")}>Merchandise</li>
                  </div>
                  <h2 id = "productListCategoryHeader">{currentCategory}</h2>
 

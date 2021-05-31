@@ -13,7 +13,7 @@ import prevDonkeyKongPlush from "../Resources/Products/Merch/prevDonkeyKongPlush
 
 const merch = [
     {
-        category: "Merch",
+        category: "Merchandise",
         id: "tee-mario-odyssey",
         name: "Super Mario Odyssey Tee - Super Mario Bros. 35th Anniversary",
         price: 26.99,
@@ -21,7 +21,7 @@ const merch = [
         prevImage: prevMarioOdysseyTee,
     },
     {
-        category: "Merch",
+        category: "Merchandise",
         id: "hat-animal-crossing",
         name: "Animal Crossing: Tom Nook Beanie",
         price: 24.99,
@@ -29,7 +29,7 @@ const merch = [
         prevImage: prevAnimalCrossingHat,
     },
     {
-        category: "Merch",
+        category: "Merchandise",
         id: "plush-kirby",
         name: "Mega Mocchi Plush - Kirby",
         price: 29.99,
@@ -37,7 +37,7 @@ const merch = [
         prevImage: prevKirbyPlush,
     },
     {
-        category: "Merch",
+        category: "Merchandise",
         id: "plush-turtle-shell",
         name: "Club Mocchi Mocchi Nintendo, Junior Mario Kart Green Shell",
         price: 15.99,
@@ -45,7 +45,7 @@ const merch = [
         prevImage: prevTurtleShellPlush,
     },
     {
-        category: "Merch",
+        category: "Merchandise",
         id: "plush-donkey-kong",
         name: "Donkey Kong 10\" Plush",
         price: 19.99,
