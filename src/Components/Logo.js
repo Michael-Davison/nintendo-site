@@ -1,10 +1,11 @@
 import React, {Component} from "react";
+import nintendoLogo from "../Resources/Logos/logo.png";
 
 
 const Logo = (props) => {
 
     return (
-        <div></div>
+        <img id = "logo" src = {nintendoLogo}></img>
     );
 
 

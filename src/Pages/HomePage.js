@@ -1,11 +1,12 @@
 import React, {Component} from "react";
-import logo from "../Resources/Logos/logo.png"
+import Logo from "../Components/Logo";
+
 
 const HomePage = (props) => {
 
     return (
         <div>
-             <img id = "logo"src = {logo}></img>
+             <Logo/>
         </div>
     );
 
