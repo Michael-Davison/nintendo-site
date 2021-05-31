@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import ProductList from "../Components/ProductList"
-import logo from "../Resources/Logos/logo.png"
+import Logo from "../Components/Logo";
+
 
 
 
@@ -8,7 +9,8 @@ const ProductsPage = (props) => {
 
     return (
         <div>
-            <img id = "logo"src = {logo}></img>
+            <Logo/>
+           
             <ProductList/>
 
 
