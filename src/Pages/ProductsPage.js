@@ -1,12 +1,14 @@
 import React, {Component} from "react";
 import ProductList from "../Components/ProductList"
+import logo from "../Resources/Logos/logo.png"
+
 
 
 const ProductsPage = (props) => {
 
     return (
         <div>
-            <h1>ProductsPage</h1>
+            <img id = "logo"src = {logo}></img>
             <ProductList/>
 
 
