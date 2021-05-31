@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+#product-list {
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border: solid black 2px;
+  margin: auto;
+  width: 50%;
+  margin-top: 10%;
+  
+}
+
+#product-Card {
+  border: solid black 2px;
+  padding: 5px;
+  width: 23%;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+#productSideBar {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    border: solid 2px black;
+    width: 5%;
+    position: absolute;
+
+}
+
+#productSideBar li {
+  margin-bottom: 5px;
+  cursor: pointer;
+  
+}
+
+#productListCategoryHeader {
+  text-align: center;
+  border: solid 2px black;
+  width: 60%;
+  position: absolute;
+  top: 27%;
+  font-style:normal;
+}
+
+#logo {
+ width: 10%;
+ height: auto;
+ padding-inline-start: 40px;
+ border: solid 2px black;
+}
+
+
+
