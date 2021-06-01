@@ -10,6 +10,7 @@ function NavBar() {
       <Nav className="ml-auto">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/ProductsPage">Store</Nav.Link>
+        <Nav.Link href="#">ShoppingCartLogo</Nav.Link>
         
       </Nav>
       <Form inline>
