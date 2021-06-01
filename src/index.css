@@ -26,14 +26,15 @@ code {
   
 }
 
-#product-Card {
-  
+#product-list div {
+  border: 2px solid black;
   padding: 20px;
   width: 23%;
   max-height: 100%;
   max-width: 100%;
-
 }
+
+
 
 #productSideBar {
     display: block;
@@ -91,5 +92,27 @@ code {
   margin-right: 20px;
   
 }
+
+#productItemPage {
+  border: black solid 2px;
+
+}
+
+#productItemDisplay  {
+ margin: auto;
+ border: 2px solid black;
+ text-align: center;
+  width: 50%;
+  margin-top: 10%;
+  
+}
+
+
+#productItemDisplay img {
+  float: left;
+  border: 2px solid black;
+}
+
+  
 
 
