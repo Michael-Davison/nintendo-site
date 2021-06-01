@@ -16,8 +16,8 @@ const ProductItem = (props) => {
     return (
         <div id = "product-Card" key = {props.image}>
             <img src = {props.image} alt = {props.name}></img>
-            <h4>{props.name}</h4>
-            <h4>{props.price}</h4>
+            <h5>{props.name}</h5>
+            <h5>${props.price}</h5>
            
 
         </div>
