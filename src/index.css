@@ -18,16 +18,17 @@ code {
   display:flex;
   flex-wrap: wrap;
   text-align: center;
-  border: solid black 2px;
+ 
   margin: auto;
   width: 50%;
   margin-top: 10%;
+
   
 }
 
 #product-Card {
-  border: solid black 2px;
-  padding: 5px;
+  
+  padding: 20px;
   width: 23%;
   max-height: 100%;
   max-width: 100%;
@@ -43,7 +44,7 @@ code {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     border: solid 2px black;
-    width: 5%;
+    width: 10%;
     position: absolute;
 
 }
@@ -59,7 +60,7 @@ code {
   border: solid 2px black;
   width: 60%;
   position: absolute;
-  top: 27%;
+  top: 25%;
   font-style:normal;
 }
 
@@ -70,5 +71,25 @@ code {
  border: solid 2px black;
 }
 
+#navbar {
+  
+  text-align: right;
+  
+  
+}
+
+.navbar {
+  background-color: #e4000F;
+}
+.navbar .navbar-brand {
+  color: #ecf0f1;
+}
+.nav-link{
+  font-family: 'Roboto', sans-serif;
+  color: white !important;
+  margin-left: 10px;
+  margin-right: 20px;
+  
+}
 
 
