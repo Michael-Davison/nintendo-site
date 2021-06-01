@@ -18,6 +18,7 @@ const ProductItem = (props) => {
             <img src = {props.image} alt = {props.name}></img>
             <h5>{props.name}</h5>
             <h5>${props.price}</h5>
+            <button>Add to Cart</button>
            
 
         </div>
