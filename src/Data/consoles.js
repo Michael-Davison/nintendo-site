@@ -2,7 +2,7 @@ import switchBlueRed from "../Resources/Products/Consoles/switchBlueRed.jpg";
 import prevSwitchBlueRed from "../Resources/Products/Consoles/prevSwitchBlueRed.jpg";
 import switchGray from "../Resources/Products/Consoles/switchGray.jpg";
 import prevSwitchGray from "../Resources/Products/Consoles/prevSwitchGray.jpg";
-import switchAnimalCrossing from "../Resources/Products/Consoles/prevSwitchAnimalCrossing.jpg";
+import switchAnimalCrossing from "../Resources/Products/Consoles/switchAnimalCrossing.jpg";
 import prevSwitchAnimalCrossing from "../Resources/Products/Consoles/prevSwitchAnimalCrossing.jpg";
 import switchLiteBlue from "../Resources/Products/Consoles/switchLiteBlue.jpg";
 import prevSwitchLiteBlue from "../Resources/Products/Consoles/prevSwitchLiteBlue.jpg";
