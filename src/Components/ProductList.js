@@ -9,6 +9,8 @@ const ProductList = (props) => {
     const [currentProductList, setCurrentProductList] = useState(allProducts);
     const [currentCategory, setCurrentCategory] = useState("All Products");
 
+
+    
     const clickHandler = (categoryArg) => {
 
 
@@ -42,12 +44,13 @@ const ProductList = (props) => {
                 <div id = "product-list">
                 
                     {currentProductList.map((product ) => {
-
+                       
                         return (
                             <ProductItem 
                             name = {product.name}
                             price = {product.price}
                             image = {product.prevImage}
+                            id = {product.id}
                             />
 
                         );
@@ -59,6 +62,13 @@ const ProductList = (props) => {
 
 
 };
+
+/*
+ <Link
+                        to={`/shopping-cart/products/${product.id}`}
+                        className={styles.productLink}
+                      >
+*/
 
 
 
