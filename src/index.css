@@ -21,13 +21,13 @@ code {
  
   margin: auto;
   width: 50%;
-  margin-top: 10%;
+  margin-top: 7%;
 
   
 }
 
 #product-list div {
-  border: 2px solid black;
+  
   padding: 20px;
   width: 23%;
   max-height: 100%;
@@ -44,7 +44,7 @@ code {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-    border: solid 2px black;
+   
     width: 10%;
     position: absolute;
 
@@ -58,7 +58,6 @@ code {
 
 #productListCategoryHeader {
   text-align: center;
-  border: solid 2px black;
   width: 60%;
   position: absolute;
   top: 25%;
@@ -69,7 +68,7 @@ code {
  width: 10%;
  height: auto;
  padding-inline-start: 40px;
- border: solid 2px black;
+ 
 }
 
 #navbar {
@@ -91,16 +90,20 @@ code {
   margin-left: 10px;
   margin-right: 20px;
   
+ 
+ 
 }
 
-#productItemPage {
-  border: black solid 2px;
-
+.nav-logo {
+  
+  float:right;
+  width: 50%;
 }
+
+
 
 #productItemDisplay  {
  margin: auto;
- border: 2px solid black;
  text-align: center;
   width: 50%;
   margin-top: 10%;
@@ -110,7 +113,41 @@ code {
 
 #productItemDisplay img {
   float: left;
-  border: 2px solid black;
+}
+
+#showcase{
+  text-align: center;
+  
+  width: 50%;
+  margin: auto;
+  float: left;
+  margin-top: 10%;
+  position: relative;
+}
+
+#showcaseImage {
+  margin-top: 10%;
+  
+}
+
+#showNowBtn {
+position: absolute;
+
+width: 100%;
+
+margin-top: 5%;
+}
+
+#showNowBtn button {
+  
+ 
+  width: 15%;
+  height: 100%;
+  font-size: larger;
+  background-color: #e4000F;
+  color: white;
+  padding: 10px;
+  font-weight: bolder;
 }
 
   
