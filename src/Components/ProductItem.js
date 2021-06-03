@@ -8,13 +8,7 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 const ProductItem = (props) => {
 
-    
 
-
-    /*
-
-
-    */
     return (
         <div id="product-Cards" key = {props.image}>
             <Link to={`/store/products/${props.id}`}>
@@ -23,7 +17,7 @@ const ProductItem = (props) => {
             
             <h5>{props.name}</h5>
             <h5>${props.price}</h5>
-            <button>Add to Cart</button>
+            <button onClick={props.addToCart}>Add to Cart</button>
            
 
         </div>
