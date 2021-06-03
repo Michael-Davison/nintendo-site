@@ -1,7 +1,8 @@
 import React, {Component, useEffect, useState} from "react";
 import allProducts from "../Data/allProducts"
 import ProductItem from "./ProductItem";
-import categories from "../Data/categories";
+import shoppingCart from "./ShoppingCart";
+
 
 
 const ProductList = (props) => {
@@ -11,7 +12,7 @@ const ProductList = (props) => {
 
 
     
-    const clickHandler = (categoryArg) => {
+    const sortClickHandler = (categoryArg) => {
 
 
       setCurrentCategory(categoryArg);
@@ -29,15 +30,16 @@ const ProductList = (props) => {
     }
 
    
+   
     return (
         <div id = "productListWrapper">
         
               <div id ="productSideBar">
-                <h4>Sort by</h4>
-                    <li onClick={e=>clickHandler("All Products")}>All Products</li>
-                    <li onClick={e=>clickHandler("Consoles")}>Consoles</li>
-                    <li onClick={e=>clickHandler("Games")}>Games</li>
-                    <li onClick={e=>clickHandler("Merchandise")}>Merchandise</li>
+                <h4 id="sortByHeader">Sort by</h4>
+                    <li onClick={e=>sortClickHandler("All Products")}>All Products</li>
+                    <li onClick={e=>sortClickHandler("Consoles")}>Consoles</li>
+                    <li onClick={e=>sortClickHandler("Games")}>Games</li>
+                    <li onClick={e=>sortClickHandler("Merchandise")}>Merchandise</li>
                  </div>
                  <h2 id = "productListCategoryHeader">{currentCategory}</h2>
 
@@ -51,6 +53,7 @@ const ProductList = (props) => {
                             price = {product.price}
                             image = {product.prevImage}
                             id = {product.id}
+                            addToCart = {e=>props.addCartHandler(product.id)}
                             />
 
                         );
