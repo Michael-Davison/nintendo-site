@@ -14,7 +14,7 @@ const HomePage = (props) => {
                 <h1>Nintendo Switch</h1>
                 <h2>Play anywhere, anytime, with anyone.</h2>
                     <div id="showNowBtn">
-                        <button id ="">SHOP NOW</button>
+                        <a id ="shopNowLink" href="/ProductsPage">SHOP NOW</a>
                     </div>
              </div>
               <div id = "showcaseImage">
