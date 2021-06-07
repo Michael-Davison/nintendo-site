@@ -14,20 +14,32 @@ function App(props) {
   const [cartArray, setCartArray] = useState([]);
   const [currentProduct, setCurrentProduct] = useState();
   const [showCart, setShowCart] = useState(true);
+  const [totalCartCost, setTotalCartCost] = useState(0);
 
  
+ 
+
 
  
   const addToCart = (productId) => {
       //setTheArray(oldArray => [...oldArray, newElement]);
-      console.log(cartArray);
+      
       const product = allProducts.find((product) => product.id === productId);
-      setCartArray(cartArray => [...cartArray, product]);
-      localStorage.setItem('cartContent', JSON.stringify(cartArray));
+
      
-    
+      if(cartArray.some(product => product.id === productId)){
+
+          incrementCartItemQuantity(productId);
+      }
+      else {
+        product["quantity"] = 1;
+        setCartArray(cartArray => [...cartArray, product]);
+      }
+      
   
 }
+
+
 
 const toggleCartDisplay = () => {
 
@@ -37,6 +49,23 @@ const calculateCartTotal = () => {
 
 }
 
+const incrementCartItemQuantity = (productId) => {
+  
+  const product = cartArray.find((product) => product.id === productId);
+
+  let products = cartArray;
+  let productIndex = cartArray.indexOf(productId);
+  product.quantity = product.quantity + 1;
+  products[productIndex] = product;
+  setCartArray([...products]);
+}
+
+const decrementCartItemQuantity = (productId) => {
+
+  //find item in cartArray
+  //increment item.quantity++
+
+}
 //    {showCart ? <ShoppingCart cartArray = {cartArray}/> : null}
 
   return (
@@ -55,7 +84,7 @@ const calculateCartTotal = () => {
                
        </Switch>
        
-       <ShoppingCart cartArray = {cartArray}/>
+       <ShoppingCart cartArray = {cartArray} totalCartCost = {totalCartCost}/>
        
        
     </div>
