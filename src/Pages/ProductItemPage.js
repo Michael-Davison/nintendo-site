@@ -13,8 +13,7 @@ const ProductItemPage = (props) => {
 
     return (
         <div id = "productItemPage">
-            <Logo/>
-            <NavBar/>
+  
             <div id ="productItemDisplay">
                 <ProductItem
                                     name = {product.name}

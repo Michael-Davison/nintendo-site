@@ -34,8 +34,6 @@ const ProductsPage = (props) => {
     }
     return (
         <div>
-            <Logo/>
-            <NavBar/>
             <ProductList addCartHandler = {handleCallback}/>
         </div>
     );

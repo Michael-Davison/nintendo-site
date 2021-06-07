@@ -8,8 +8,7 @@ const HomePage = (props) => {
 
     return (
         <div>
-             <Logo/>
-             <NavBar/>
+            
              <div id = "showcase">
                 <h1>Nintendo Switch</h1>
                 <h2>Play anywhere, anytime, with anyone.</h2>
