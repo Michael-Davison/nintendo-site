@@ -16,6 +16,12 @@ function App(props) {
   const [showCart, setShowCart] = useState(true);
   const [totalCartCost, setTotalCartCost] = useState(0);
 
+
+  useEffect (() =>
+    {       
+        calculateCartTotal();
+    }, [cartArray]);
+
  
  
 
@@ -46,6 +52,11 @@ const toggleCartDisplay = () => {
 }
 
 const calculateCartTotal = () => {
+
+  //array.forEach(item => console.log(item));
+  let totalCost = 0;
+  cartArray.forEach(product => totalCost += product.price * product.quantity);
+  setTotalCartCost(totalCost);
 
 }
 
