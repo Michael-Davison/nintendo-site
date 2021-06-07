@@ -26,7 +26,7 @@ const ProductsPage = (props) => {
     const handleCallback = (productId) => {
         //user clicked add, change state
         props.addToCart(productId);
-        console.log(props.cartArray);
+       
 
         
         
