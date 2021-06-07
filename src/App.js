@@ -6,6 +6,8 @@ import ProductItemPage from "./Pages/ProductItemPage.js";
 import React, {Component, useEffect, useState} from "react";
 import ShoppingCart from './Components/ShoppingCart.js';
 import allProducts from "./Data/allProducts";
+import Logo from "./Components/Logo";
+import NavBar from "./Components/NavBar";
 
 
 
@@ -13,8 +15,15 @@ function App(props) {
 
   const [cartArray, setCartArray] = useState([]);
   const [currentProduct, setCurrentProduct] = useState();
-  const [showCart, setShowCart] = useState(true);
+  const [showCart, setShowCart] = useState(false);
   const [totalCartCost, setTotalCartCost] = useState(0);
+ 
+
+  const showCartClick = () => {
+
+    setShowCart(!showCart);
+  }
+    // {showCart ? <ShoppingCart/> : null}
 
 
   useEffect (() =>
@@ -81,6 +90,8 @@ const decrementCartItemQuantity = (productId) => {
 
   return (
     <div className="App">
+      <Logo/>
+      <NavBar showCartClick = {showCartClick}/>
       <Switch>
                 <Route exact path="/">
                   <HomePage/>
@@ -94,8 +105,8 @@ const decrementCartItemQuantity = (productId) => {
                
                
        </Switch>
+       {showCart ? <ShoppingCart cartArray = {cartArray} totalCartCost = {totalCartCost}/> : null}
        
-       <ShoppingCart cartArray = {cartArray} totalCartCost = {totalCartCost}/>
        
        
     </div>

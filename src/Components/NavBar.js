@@ -12,16 +12,9 @@ import {
 import HomePage from '../Pages/HomePage';
 import ProductsPage from '../Pages/ProductsPage';
 
-function NavBar() {
+function NavBar(props) {
 
-  const [showCart, setShowCart] = useState(false);
-
-  const clickHandle = () => {
-
-    setShowCart(!showCart);
-  }
-    // {showCart ? <ShoppingCart/> : null}
-   
+  
   return (
 
    
@@ -31,7 +24,7 @@ function NavBar() {
       <Nav className="ml-auto">
         <Link to ="/">Home</Link>
         <Link to ="/ProductsPage">Store</Link>
-        <Link to ="#"><img onClick={clickHandle} width="30" height="30" src = {cartLogo}></img></Link>
+        <Link to ="#"><img onClick={props.showCartClick} width="30" height="30" src = {cartLogo}></img></Link>
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
