@@ -68,10 +68,7 @@ code {
 }
 
 #addToCartBtn {
-  margin: 1%;
-  border-radius: 4px;
-  background-color: #e4000F;
-  color: white;
+  
 }
 
 #sortByHeader {
@@ -169,7 +166,7 @@ code {
   
 }
 
-#cartItem button {
+#cartItem button, #addToCartBtn{
   margin: 1%;
   border-radius: 4px;
   background-color: #e4000F;
@@ -216,12 +213,14 @@ code {
   width: 50%;
   margin: auto;
   float: left;
-  margin-top: 10%;
+  margin-top: 5%;
   position: relative;
+  
 }
 
 #showcaseImage {
   margin-top: 10%;
+  
   
 }
 
