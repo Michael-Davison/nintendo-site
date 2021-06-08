@@ -219,13 +219,13 @@ code {
   width: 50%;
   margin: auto;
   float: left;
-  margin-top: 5%;
+  margin-top: 0;
   position: relative;
   
 }
 
 #showcaseImage {
-  margin-top: 10%;
+  margin-top: 13%;
   
   
 }

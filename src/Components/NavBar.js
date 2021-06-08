@@ -4,14 +4,12 @@ import cartLogo from "../Resources/Logos/cartLogo.png";
 import React, {Component, useState} from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 
 function NavBar(props) {
 
-  //{showCart ? <ShoppingCart cartArray = {cartArray}/> : null}
+
   return (
 
    

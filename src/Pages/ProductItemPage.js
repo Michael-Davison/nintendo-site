@@ -1,6 +1,4 @@
-import React, {Component} from "react";
-import NavBar from "../Components/NavBar";
-import Logo from "../Components/Logo";
+import React, { Component } from "react";
 import { useParams } from "react-router-dom";
 import allProducts from "../Data/allProducts";
 import ProductItem from "../Components/ProductItem";
@@ -12,17 +10,18 @@ const ProductItemPage = (props) => {
     const product = allProducts.find((product) => product.id === productId);
 
     return (
-        <div id = "productItemPage">
-  
-            <div id ="productItemDisplay">
+        <div id="productItemPage">
+
+            <div id="productItemDisplay">
                 <ProductItem
-                                    name = {product.name}
-                                    price = {product.price}
-                                    image = {product.image}
-                                    id = {product.id}
-                                    />
+                    name={product.name}
+                    price={product.price}
+                    image={product.image}
+                    id={product.id}
+                    addToCart={e => props.addToCart(product.id)}
+                />
             </div>
-            
+
         </div>
     );
 

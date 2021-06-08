@@ -1,6 +1,4 @@
 import React, {Component} from "react";
-import Logo from "../Components/Logo";
-import NavBar from "../Components/NavBar";
 import switchImage from "../Resources/Misc/homeSwitchImage.png";
 
 
