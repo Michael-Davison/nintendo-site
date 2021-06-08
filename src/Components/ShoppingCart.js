@@ -34,6 +34,7 @@ const ShoppingCart = (props) => {
                                 )
                             })}
                             <h5 id ="totalCartCostHeader">Total Cart:$ {props.totalCartCost}</h5>
+                            <button id ="checkOutBtn">Check Out</button>
                     </div>
                     
             </div>

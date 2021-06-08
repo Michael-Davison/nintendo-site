@@ -47,12 +47,14 @@ code {
    
     width: 10%;
     position: absolute;
+    
 
 }
 
 #productSideBar li {
   margin-bottom: 5px;
   cursor: pointer;
+ 
   
 }
 
@@ -62,6 +64,12 @@ code {
   position: absolute;
   top: 25%;
   font-style:normal;
+  
+}
+
+#sortByHeader {
+  margin-bottom: 30%;
+  
 }
 
 #logo {
@@ -74,30 +82,110 @@ code {
 #navbar {
   
   text-align: right;
+  font-weight:600;
   
   
 }
 
 .navbar {
   background-color: #e4000F;
+  
+}
+.navbar .ml-auto a{
+ 
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white !important;
 }
 .navbar .navbar-brand {
   color: #ecf0f1;
+  
 }
-.nav-link{
+.nav{
   font-family: 'Roboto', sans-serif;
   color: white !important;
   margin-left: 10px;
   margin-right: 20px;
   
- 
- 
+  
 }
 
-.nav-logo {
+#container {
+  margin: auto;
+  width: 80%;
+}
+
+
+#shoppingCartContainer {
+
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  width: 25%;
+}
+
+#shoppingCart {
+  margin: 10px 0;
+  background: white;
   
-  float:right;
-  width: 50%;
+  right: 5%;
+  border-radius: 3px;
+  padding: 20px;
+  border: solid black 2px;
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+  
+}
+
+
+
+
+#shoppingCartHeader {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#cartItem {
+  padding: 1%;
+}
+#cartItem li{
+  text-align: right;
+ 
+ 
+ 
+  
+}
+#cartItem img {
+  float: left;
+  width: 18%;
+  
+}
+
+#cartItem button {
+  margin: 1%;
+  border-radius: 4px;
+  background-color: #e4000F;
+  color: white;
+}
+
+#totalCartCostHeader {
+  
+  display: inline-block;
+}
+
+#checkOutBtn{
+  display: inline-block;
+ 
+  border-radius: 4px;
+  background-color: #e4000F;
+  color: white;
+  margin-top: 10%;
+  margin-left: 30%;
+  width: 150px;
+  height: 50px;
+  font-size: large;
+ 
 }
 
 
@@ -138,16 +226,13 @@ width: 100%;
 margin-top: 5%;
 }
 
-#showNowBtn button {
-  
- 
-  width: 15%;
-  height: 100%;
-  font-size: larger;
+#shopNowLink {
+  border: solid 2px black;
+  padding: 20px;
   background-color: #e4000F;
   color: white;
-  padding: 10px;
-  font-weight: bolder;
+  font-weight: 500;
+ 
 }
 
   
