@@ -23,12 +23,13 @@ function App(props) {
 
     setShowCart(!showCart);
   }
-    // {showCart ? <ShoppingCart/> : null}
+    
 
 
   useEffect (() =>
     {       
         calculateCartTotal();
+        //change cartBadge
     }, [cartArray]);
 
  
@@ -37,8 +38,7 @@ function App(props) {
 
  
   const addToCart = (productId) => {
-      //setTheArray(oldArray => [...oldArray, newElement]);
-      
+     
       const product = allProducts.find((product) => product.id === productId);
 
      
@@ -50,6 +50,8 @@ function App(props) {
         product["quantity"] = 1;
         setCartArray(cartArray => [...cartArray, product]);
       }
+
+      //display notifcation added to cart 
       
   
 }
@@ -82,8 +84,18 @@ const incrementCartItemQuantity = (productId) => {
 
 const decrementCartItemQuantity = (productId) => {
 
-  //find item in cartArray
-  //increment item.quantity++
+  const product = cartArray.find((product) => product.id === productId);
+
+  if(product.quantity == 1)
+{
+  return alert("Quantity must be greater than 0.")
+}
+
+  let products = cartArray;
+  let productIndex = cartArray.indexOf(productId);
+  product.quantity = product.quantity - 1;
+  products[productIndex] = product;
+  setCartArray([...products]);
 
 }
 //    {showCart ? <ShoppingCart cartArray = {cartArray}/> : null}
@@ -105,7 +117,7 @@ const decrementCartItemQuantity = (productId) => {
                
                
        </Switch>
-       {showCart ? <ShoppingCart cartArray = {cartArray} totalCartCost = {totalCartCost}/> : null}
+       {showCart ? <ShoppingCart addQuantityButton = {incrementCartItemQuantity} subtractQuantityButton = {decrementCartItemQuantity}cartArray = {cartArray} totalCartCost = {totalCartCost}/> : null}
        
        
        

@@ -5,7 +5,7 @@ const ShoppingCart = (props) => {
 
   
 
-                          
+                          //onClick={e=> clickHandler(cards[position].name)}
     return (
         <div id="shoppingCartContainer">
             <div id = "shoppingCart">
@@ -23,13 +23,17 @@ const ShoppingCart = (props) => {
                                                 <img id ="cartItemImg" src = {product.prevImage}></img>
                                                 <li>{product.name}</li>
                                                 <li>Price: ${product.price}</li>
-                                                <li>Quantity: {product.quantity}</li>
+                                                <li>Quantity: 
+                                                    <button onClick={()=> props.addQuantityButton(product.id)}> + </button>
+                                                    {product.quantity}
+                                                    <button onClick={()=> props.subtractQuantityButton(product.id)}> - </button>
+                                                </li>
                                            
                                         
                                     </div>
                                 )
                             })}
-                            <h5>Total Cart:$ {props.totalCartCost}</h5>
+                            <h5 id ="totalCartCostHeader">Total Cart:$ {props.totalCartCost}</h5>
                     </div>
                     
             </div>
