@@ -67,6 +67,13 @@ code {
   
 }
 
+#addToCartBtn {
+  margin: 1%;
+  border-radius: 4px;
+  background-color: #e4000F;
+  color: white;
+}
+
 #sortByHeader {
   margin-bottom: 30%;
   
