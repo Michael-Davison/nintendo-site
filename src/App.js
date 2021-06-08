@@ -17,6 +17,17 @@ function App(props) {
   const [currentProduct, setCurrentProduct] = useState();
   const [showCart, setShowCart] = useState(false);
   const [totalCartCost, setTotalCartCost] = useState(0);
+  const [cartQuantity, setCartQuantity] = useState(cartArray.length);
+
+
+  const updateQuantity = () => {
+    let totalQuantity = 0;
+   cartArray.forEach(element => {
+     totalQuantity += element.quantity;
+   });
+
+   setCartQuantity(totalQuantity);
+  }
  
 
   const showCartClick = () => {
@@ -29,6 +40,7 @@ function App(props) {
   useEffect (() =>
     {       
         calculateCartTotal();
+        updateQuantity();
         //change cartBadge
     }, [cartArray]);
 
@@ -67,7 +79,7 @@ const calculateCartTotal = () => {
   //array.forEach(item => console.log(item));
   let totalCost = 0;
   cartArray.forEach(product => totalCost += product.price * product.quantity);
-  setTotalCartCost(totalCost);
+  setTotalCartCost(totalCost.toFixed(2));
 
 }
 
@@ -103,7 +115,7 @@ const decrementCartItemQuantity = (productId) => {
   return (
     <div className="App">
       <Logo/>
-      <NavBar showCartClick = {showCartClick}/>
+      <NavBar showCartClick = {showCartClick} cartQuantity = {cartQuantity}/>
       <Switch>
                 <Route exact path="/">
                   <HomePage/>
