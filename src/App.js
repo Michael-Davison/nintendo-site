@@ -68,12 +68,6 @@ function App(props) {
   
 }
 
-
-
-const toggleCartDisplay = () => {
-
-}
-
 const calculateCartTotal = () => {
 
   //array.forEach(item => console.log(item));
@@ -110,7 +104,14 @@ const decrementCartItemQuantity = (productId) => {
   setCartArray([...products]);
 
 }
-//    {showCart ? <ShoppingCart cartArray = {cartArray}/> : null}
+
+const removeCartItem = (productId) => {
+
+  
+  
+  setCartArray(cartArray.filter(product => product.id != productId));
+
+}
 
   return (
     <div className="App">
@@ -129,7 +130,7 @@ const decrementCartItemQuantity = (productId) => {
                
                
        </Switch>
-       {showCart ? <ShoppingCart cartQuantity = {cartQuantity} addQuantityButton = {incrementCartItemQuantity} subtractQuantityButton = {decrementCartItemQuantity} cartArray = {cartArray} totalCartCost = {totalCartCost}/> : null}
+       {showCart ? <ShoppingCart removeCartItem = {removeCartItem}cartQuantity = {cartQuantity} addQuantityButton = {incrementCartItemQuantity} subtractQuantityButton = {decrementCartItemQuantity} cartArray = {cartArray} totalCartCost = {totalCartCost}/> : null}
        
        
        

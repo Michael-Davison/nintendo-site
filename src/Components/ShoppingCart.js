@@ -21,6 +21,7 @@ const ShoppingCart = (props) => {
 
                             <div key={product.id} id="cartItem">
                                 <img id="cartItemImg" src={product.prevImage}></img>
+                                <button onClick={() => props.removeCartItem(product.id)} id ="removeButton">Remove</button>
                                 <li>{product.name}</li>
                                 <li>Price: ${product.price}</li>
                                 <li>Quantity:

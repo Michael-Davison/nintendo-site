@@ -162,8 +162,14 @@ code {
 }
 #cartItem img {
   float: left;
-  width: 18%;
+  width: 25%;
   
+}
+#removeButton {
+  width: 12%;
+  float: left;
+  font-size:.7em;
+  text-align: center;
 }
 
 #cartItem button, #addToCartBtn{
