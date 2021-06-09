@@ -10,9 +10,9 @@ const ProductItem = (props) => {
 
 
     return (
-        <div id="product-Cards" key={props.image}>
+        <div id="product-Card" key={props.image}>
             <Link to={`/store/products/${props.id}`}>
-                <img src={props.image} alt={props.name}></img>
+                <img className="productCardImg" src={props.image} alt={props.name}></img>
             </Link>
 
             <h5>{props.name}</h5>

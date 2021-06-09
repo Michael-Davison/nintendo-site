@@ -21,7 +21,7 @@ code {
  
   margin: auto;
   width: 50%;
-  margin-top: 7%;
+  margin-top: 3%;
 
   
 }
@@ -32,6 +32,7 @@ code {
   width: 23%;
   max-height: 100%;
   max-width: 100%;
+  
 }
 
 
@@ -61,15 +62,57 @@ code {
 #productListCategoryHeader {
   text-align: center;
   width: 60%;
-  position: absolute;
-  top: 25%;
+  margin-top: 5%;
   font-style:normal;
   
 }
 
-#addToCartBtn {
+
+#product-Card:hover  #addToCartBtn{
+  display: initial;
+  border: 2px solid black;
   
 }
+
+
+
+#addToCartBtn{
+ 
+  border-radius: 4px;
+  background-color: #e4000F;
+  color: white;
+  display: none;
+ 
+}
+
+
+
+
+
+
+   /*
+
+<div id="testContainer"> <button id="revealButton">Hover this</button>
+             
+              <div id="hide">This should appear after hovering</div>
+         </div>
+              
+        </div>
+
+        #productCardImg:hover + #addToCartBtn{
+  border: 2px solid black;
+  display: block;
+}
+
+#hide {
+  border: 2px solid black;
+  display: none;
+}
+        */
+
+
+
+
 
 #sortByHeader {
   margin-bottom: 30%;
@@ -78,7 +121,6 @@ code {
 
 #logo {
  width: 10%;
- height: auto;
  padding-inline-start: 40px;
  
 }
@@ -172,7 +214,7 @@ code {
   text-align: center;
 }
 
-#cartItem button, #addToCartBtn{
+#cartItem button{
   margin: 1%;
   border-radius: 4px;
   background-color: #e4000F;
@@ -247,6 +289,5 @@ margin-top: 5%;
  
 }
 
-  
-
+ 
 
