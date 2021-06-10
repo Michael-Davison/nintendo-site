@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import switchImage from "../Resources/Misc/homeSwitchImage.png";
-
+import {Link } from "react-router-dom";
 
 const HomePage = (props) => {
 
@@ -11,7 +11,7 @@ const HomePage = (props) => {
                 <h1>Nintendo Switch</h1>
                 <h2>Play anywhere, anytime, with anyone.</h2>
                 <div id="showNowBtn">
-                    <a id="shopNowLink" href="/ProductsPage">SHOP NOW</a>
+                <Link id="shopNowLink"to ="/ProductsPage">SHOP NOW</Link>
                 </div>
             </div>
             <div id="showcaseImage">
