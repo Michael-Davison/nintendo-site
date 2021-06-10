@@ -17,7 +17,6 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -45,5 +44,17 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael-Davison/nintendo-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael-Davison/nintendo-site/issues"
+  },
+  "homepage": "https://github.com/Michael-Davison/nintendo-site#readme",
+  "description": ""
 }
