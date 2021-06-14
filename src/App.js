@@ -14,7 +14,6 @@ import NavBar from "./Components/NavBar";
 function App(props) {
 
   const [cartArray, setCartArray] = useState([]);
-  const [currentProduct, setCurrentProduct] = useState();
   const [showCart, setShowCart] = useState(false);
   const [totalCartCost, setTotalCartCost] = useState(0);
   const [cartQuantity, setCartQuantity] = useState(cartArray.length);
@@ -41,7 +40,7 @@ function App(props) {
     {       
         calculateCartTotal();
         updateQuantity();
-        //change cartBadge
+        
     }, [cartArray]);
 
  
@@ -63,14 +62,14 @@ function App(props) {
         setCartArray(cartArray => [...cartArray, product]);
       }
 
-      //display notifcation added to cart 
+    
       
   
 }
 
 const calculateCartTotal = () => {
 
-  //array.forEach(item => console.log(item));
+  
   let totalCost = 0;
   cartArray.forEach(product => totalCost += product.price * product.quantity);
   setTotalCartCost(totalCost.toFixed(2));
@@ -130,7 +129,7 @@ const removeCartItem = (productId) => {
                
                
        </Switch>
-       {showCart ? <ShoppingCart removeCartItem = {removeCartItem}cartQuantity = {cartQuantity} addQuantityButton = {incrementCartItemQuantity} subtractQuantityButton = {decrementCartItemQuantity} cartArray = {cartArray} totalCartCost = {totalCartCost}/> : null}
+       {showCart ? <ShoppingCart showCartClick = {showCartClick} removeCartItem = {removeCartItem}cartQuantity = {cartQuantity} addQuantityButton = {incrementCartItemQuantity} subtractQuantityButton = {decrementCartItemQuantity} cartArray = {cartArray} totalCartCost = {totalCartCost}/> : null}
        
        
        
