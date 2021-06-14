@@ -73,7 +73,7 @@ code {
 }
 
 #logo {
-width: 10vw;
+width: 200px;
 }
 
 #navbar {
@@ -95,13 +95,11 @@ width: 10vw;
 .nav{
   font-family: 'Roboto', sans-serif;
   color: white !important;
-  margin-left: 10px;
-  margin-right: 20px;
+ 
 }
 
-#container {
-  margin: auto;
-  width: 80%;
+.navbar-expand {
+  flex-wrap: nowrap;
 }
 
 
@@ -286,6 +284,29 @@ img {
 {
   #product-list #product-Card {
     width:50%;
+    
   }
+
+  #navbar > nav > div
+  {
+   
+    display: inline;
+    margin: auto;
+  }
+
+  .navbar form {
+    margin: auto;
+  }
+  
+  .navbar .form-control {
+   
+   width: 75%;
+  }
+
+  .navbar button {
+    width: 25%;
+  }
+    
+ 
 }
 

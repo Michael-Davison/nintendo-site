@@ -14,12 +14,11 @@ function NavBar(props) {
 
    
     <div id = "navbar">
-    <Navbar>
-      <Navbar.Brand href="#home"></Navbar.Brand>
+    <Navbar expand="sm">
       <Nav className="ml-auto">
         <Link to ="/">Home</Link>
         <Link to ="/ProductsPage">Store</Link>
-        <Link to ="#" ><img onClick={props.showCartClick} width="30" height="30" src = {cartLogo}></img> {props.cartQuantity != 0 ? <Badge variant="dark">{props.cartQuantity}</Badge> : null }</Link>
+        <Link to ="#" ><img id = "cartImg" onClick={props.showCartClick} width="30" height="30" src = {cartLogo}></img> {props.cartQuantity != 0 ? <Badge variant="dark">{props.cartQuantity}</Badge> : null }</Link>
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
