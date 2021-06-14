@@ -129,7 +129,7 @@ const removeCartItem = (productId) => {
                
                
        </Switch>
-       {showCart ? <ShoppingCart showCartClick = {showCartClick} removeCartItem = {removeCartItem}cartQuantity = {cartQuantity} addQuantityButton = {incrementCartItemQuantity} subtractQuantityButton = {decrementCartItemQuantity} cartArray = {cartArray} totalCartCost = {totalCartCost}/> : null}
+       <ShoppingCart showCart = {showCart} showCartClick = {showCartClick} removeCartItem = {removeCartItem}cartQuantity = {cartQuantity} addQuantityButton = {incrementCartItemQuantity} subtractQuantityButton = {decrementCartItemQuantity} cartArray = {cartArray} totalCartCost = {totalCartCost}/> 
        
        
        

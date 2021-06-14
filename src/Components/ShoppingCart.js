@@ -21,7 +21,8 @@ const ShoppingCart = (props) => {
     return (
         <AnimatePresence>
            
-                
+            {props.showCart &&  (
+                <>
            <motion.div
             variants={backdrop}
             initial="hidden"
@@ -31,6 +32,7 @@ const ShoppingCart = (props) => {
             transition={{ ease: "easeOut", duration: 0.5 }}
             className="backdrop"
           />
+            
           <motion.div
             variants={cart}
             initial="hidden"
@@ -39,7 +41,7 @@ const ShoppingCart = (props) => {
             transition={{ ease: "easeOut", duration: 0.5 }}
             className="cart"
           >
-
+            
                 <div id = "shoppingCartContainer">
                     <h3 id ="shoppingCartHeader">Shopping Cart</h3>
                     {props.cartQuantity != 0 ? props.cartArray.map((product) => {
@@ -76,13 +78,15 @@ const ShoppingCart = (props) => {
 
                     </div>
                     </motion.div>
+                    </>
+            )}
         </AnimatePresence>
     );
 
 
 
 
-};
+}
 
 
 
