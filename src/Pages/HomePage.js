@@ -5,7 +5,7 @@ import {Link } from "react-router-dom";
 const HomePage = (props) => {
 
     return (
-        <div>
+        <div id = "homePageContainer">
 
             <div id="showcase">
                 <h1>Nintendo Switch</h1>
@@ -14,8 +14,8 @@ const HomePage = (props) => {
                 <Link id="shopNowLink"to ="/ProductsPage">SHOP NOW</Link>
                 </div>
             </div>
-            <div id="showcaseImage">
-                <img src={switchImage}></img>
+            <div id = "showCaseImgContainer" >
+                <img  src={switchImage}></img>
             </div>
         </div>
 

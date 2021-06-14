@@ -9,7 +9,29 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    mono
+    
+}
+
+#homePageContainer {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: 75%;
+  justify-content: space-between;
+  
+}
+
+#showcase {
+  margin-top: 25%;
+}
+
+#showCaseImgContainer {
+  margin-top: 25%;
+}
+
+#showNowBtn {
+  margin-top: 10%;
 }
 
 #product-list {
@@ -182,24 +204,7 @@ width: 200px;
   float: left;
 }
 
-#showcase{
-  text-align: center;
-  width: 50vw;
-  margin: auto;
-  float: left;
-  margin-top: 0;
-  position: relative;
-}
 
-#showcaseImage {
-  margin-top: 13%;
-}
-
-#showNowBtn {
-position: absolute;
-width: 100%;
-margin-top: 5%;
-}
 
 #shopNowLink {
   border: solid 2px black;
@@ -219,23 +224,8 @@ img {
 }
 
 @media only screen and (max-width: 1000px) {
-  #showcase {
-    float: none;
-    font-size: 4vw;
-    width: 50%;
-  }
-
- #showcase h2 {
-    font-size: 6vw;
-  }
-
-  #showcase h1 {
-    font-size: 8vw;
-  }
-
-  #showcaseImage {
-    padding: 5vw;
-  }
+ 
+ 
 
   #product-list {
     width: 100%;
@@ -282,9 +272,16 @@ img {
 
 @media screen and (max-width: 600px) 
 {
+
+  #homePageContainer {
+    display: block;
+  }
+
+  #showCaseImgContainer {
+    margin-bottom: 5%;
+  }
   #product-list #product-Card {
     width:50%;
-    
   }
 
   #navbar > nav > div
@@ -292,6 +289,7 @@ img {
    
     display: inline;
     margin: auto;
+    margin-bottom: 1%;
   }
 
   .navbar form {
