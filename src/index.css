@@ -12,27 +12,20 @@ code {
     monospace;
 }
 
-
-
 #product-list {
   display:flex;
   flex-wrap: wrap;
   text-align: center;
- 
   margin: auto;
   width: 50%;
   margin-top: 3%;
-
-  
 }
 
 #product-list div {
-  
   padding: 20px;
   width: 23%;
   max-height: 100%;
   max-width: 100%;
-  
 }
 
 #productSideBar {
@@ -43,18 +36,14 @@ code {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-   
     width: 10%;
     position: absolute;
-    
-
+  
 }
 
 #productSideBar li {
   margin-bottom: 5px;
   cursor: pointer;
- 
-  
 }
 
 #productListCategoryHeader {
@@ -63,31 +52,24 @@ code {
   margin-top: 5%;
   margin-left: 8vw;
   font-style:normal;
-  font-size: 2vw;
-  
+  font-size: 2vw; 
 }
 
 
 #product-Card:hover  #addToCartBtn{
   display: initial;
-  border: 2px solid black;
-  
+  border: 2px solid black; 
 }
 
-
-
 #addToCartBtn{
- 
   border-radius: 4px;
   background-color: #e4000F;
   color: white;
   display: none;
- 
 }
 
 #sortByHeader {
   margin-bottom: 30%;
-  
 }
 
 #logo {
@@ -95,34 +77,26 @@ width: 10vw;
 }
 
 #navbar {
-  
   text-align: right;
   font-weight:600;
-  
-  
 }
 
 .navbar {
   background-color: #e4000F;
-  
 }
 .navbar .ml-auto a{
- 
   margin-left: 10px;
   margin-right: 10px;
   color: white !important;
 }
 .navbar .navbar-brand {
   color: #ecf0f1;
-  
 }
 .nav{
   font-family: 'Roboto', sans-serif;
   color: white !important;
   margin-left: 10px;
   margin-right: 20px;
-  
-  
 }
 
 #container {
@@ -132,7 +106,6 @@ width: 10vw;
 
 
 #shoppingCartContainer {
-
   position: absolute;
   top: 15%;
   right: 1%;
@@ -142,7 +115,6 @@ width: 10vw;
 #shoppingCart {
   margin: 10px 0;
   background: white;
-  
   right: 5%;
   border-radius: 3px;
   padding: 20px;
@@ -150,7 +122,6 @@ width: 10vw;
   width: 100%;
   list-style: none;
   display: inline-block;
-  
 }
 
 #shoppingCartHeader {
@@ -162,11 +133,7 @@ width: 10vw;
   padding: 1%;
 }
 #cartItem li{
-  text-align: right;
- 
- 
- 
-  
+  text-align: right; 
 }
 #cartItem img {
   float: left;
@@ -188,13 +155,11 @@ width: 10vw;
 }
 
 #totalCartCostHeader {
-  
   display: inline-block;
 }
 
 #checkOutBtn{
   display: inline-block;
- 
   border-radius: 4px;
   background-color: #e4000F;
   color: white;
@@ -203,7 +168,6 @@ width: 10vw;
   width: 150px;
   height: 50px;
   font-size: large;
- 
 }
 
 
@@ -211,9 +175,8 @@ width: 10vw;
 #productItemDisplay  {
  margin: auto;
  text-align: center;
-  width: 50%;
-  margin-top: 10%;
-  
+ width: 50%;
+ margin-top: 10%;
 }
 
 
@@ -223,26 +186,20 @@ width: 10vw;
 
 #showcase{
   text-align: center;
-  
   width: 50vw;
   margin: auto;
   float: left;
   margin-top: 0;
   position: relative;
-  
 }
 
 #showcaseImage {
   margin-top: 13%;
-  
-  
 }
 
 #showNowBtn {
 position: absolute;
-
 width: 100%;
-
 margin-top: 5%;
 }
 
@@ -252,29 +209,19 @@ margin-top: 5%;
   background-color: #e4000F;
   color: white;
   font-weight: 500;
- 
 }
 
 img {
   max-width: 100%;
   height: auto;
-  
 }
 
 #product-list h5 {
   font-size: 1vw;
-  
 }
-
-
-
-
- 
-
 
 @media only screen and (max-width: 1000px) {
   #showcase {
-   
     float: none;
     font-size: 4vw;
     width: 50%;
@@ -289,7 +236,6 @@ img {
   }
 
   #showcaseImage {
-   
     padding: 5vw;
   }
 
@@ -299,7 +245,11 @@ img {
 
   #product-list h5 {
     font-size: 2vw;
-    
+   
+  }
+
+  #product-list #product-Card{
+    width: 33%;
   }
 
   #productSideBar {
@@ -322,14 +272,20 @@ img {
   font-size: 4vw;
   margin-bottom: 2%;
   text-align: center;
-
 }
 
 
 #productListCategoryHeader {
     font-size: 4vw;
     text-align: left;
+  }
+}
 
+
+@media screen and (max-width: 600px) 
+{
+  #product-list #product-Card {
+    width:50%;
   }
 }
 
