@@ -132,7 +132,7 @@ const removeCartItem = (productId) => {
        <ShoppingCart showCart = {showCart} showCartClick = {showCartClick} removeCartItem = {removeCartItem}cartQuantity = {cartQuantity} addQuantityButton = {incrementCartItemQuantity} subtractQuantityButton = {decrementCartItemQuantity} cartArray = {cartArray} totalCartCost = {totalCartCost}/> 
        
        
-       
+      
     </div>
   );
 }

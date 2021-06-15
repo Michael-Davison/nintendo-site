@@ -195,22 +195,25 @@ width: 200px;
 #totalCartCostHeader {
   position: absolute;
   bottom: 3vw;
-  left: 5vw;
+  left: 3vw;
   margin-top: 10%;
+  font-size: 1.3em;
 }
 
 #checkOutBtn{
   position: absolute;
   bottom: 3vw;
-  right: 5vw;
+  right: 3vw;
   border-radius: 4px;
   background-color: #e4000F;
   color: white;
   margin-top: 10%;
   margin-left: 30%;
-  width: 150px;
-  height: 50px;
-  font-size: large;
+  width: 100px;
+  height: 40px;
+  
+  
+ 
 }
 
 #exitCartBtn{
@@ -239,7 +242,7 @@ width: 200px;
 
 
 #shopNowLink {
-  border: solid 2px black;
+  border: solid 1px black;
   padding: 10px;
   background-color: #e4000F;
   color: white;
@@ -255,9 +258,33 @@ img {
   font-size: 1vw;
 }
 
+
+#productItemDisplay #addToCartBtn{
+  border-radius: 4px;
+  background-color: #e4000F;
+  color: white;
+  display: initial;
+
+}
+
 @media only screen and (max-width: 1000px) {
  
- 
+  #totalCartCostHeader {
+    position: absolute;
+    bottom: 3vw;
+    left: 3vw;
+    margin-top: 10%;
+    font-size: 1.3em;
+  }
+
+  .cart {
+    width: 50%;
+  }
+
+  #checkOutBtn {
+    width: 100px;
+    height: 40px;
+  }
 
   #product-list {
     width: 100%;
@@ -348,6 +375,19 @@ img {
     overflow-y: scroll;
     list-style: none;
     
+  }
+
+  #totalCartCostHeader {
+    position: absolute;
+    bottom: 3vw;
+    left: 3vw;
+    margin-top: 10%;
+    font-size: 1.3em;
+  }
+
+  #checkOutBtn {
+    width: 100px;
+    height: 40px;
   }
     
  
