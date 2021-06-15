@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nintendo-site/static/css/main.538dd99f.chunk.css",
+    "main.css": "/nintendo-site/static/css/main.b6b77776.chunk.css",
     "main.js": "/nintendo-site/static/js/main.4d41c0f5.chunk.js",
     "main.js.map": "/nintendo-site/static/js/main.4d41c0f5.chunk.js.map",
     "runtime-main.js": "/nintendo-site/static/js/runtime-main.b89950d2.js",
@@ -10,7 +10,7 @@
     "static/js/2.bbf0199d.chunk.js.map": "/nintendo-site/static/js/2.bbf0199d.chunk.js.map",
     "index.html": "/nintendo-site/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/nintendo-site/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.538dd99f.chunk.css.map": "/nintendo-site/static/css/main.538dd99f.chunk.css.map",
+    "static/css/main.b6b77776.chunk.css.map": "/nintendo-site/static/css/main.b6b77776.chunk.css.map",
     "static/js/2.bbf0199d.chunk.js.LICENSE.txt": "/nintendo-site/static/js/2.bbf0199d.chunk.js.LICENSE.txt",
     "static/media/animalCrossing.b9f7100b.jpg": "/nintendo-site/static/media/animalCrossing.b9f7100b.jpg",
     "static/media/animalCrossingHat.bfde8f8b.jpg": "/nintendo-site/static/media/animalCrossingHat.bfde8f8b.jpg",
@@ -46,7 +46,7 @@
     "static/js/runtime-main.b89950d2.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.bbf0199d.chunk.js",
-    "static/css/main.538dd99f.chunk.css",
+    "static/css/main.b6b77776.chunk.css",
     "static/js/main.4d41c0f5.chunk.js"
   ]
 }
